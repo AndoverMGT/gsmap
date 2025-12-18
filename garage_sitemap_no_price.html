@@ -176,6 +176,7 @@
         card.id="card-"+d.id;
         card.innerHTML = `<strong>Unit ${d.id}</strong><br>
           Status: ${d.status}<br>
+          Price: ${d.price}<br>
           Size: ${d.length}x${d.width} (${d.sqft} sqft)<br>
           ${d.amenities?`Amenities: ${d.amenities}`:""}`;
         card.addEventListener("click",()=>document.getElementById("unit-"+d.id).dispatchEvent(new Event("click")));
