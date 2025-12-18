@@ -192,6 +192,7 @@
       tooltip.style.top = (evt.pageY + 10) + "px";
       tooltip.innerHTML = `<strong>Unit ${d.id}</strong><br>
         Status: ${d.status}<br>
+        Price: ${d.price}<br>
         Dimensions: ${d.length} × ${d.width} (${d.sqft} sqft)<br>
         ${d.amenities ? `Amenities: ${d.amenities}` : ""}`;
     }
